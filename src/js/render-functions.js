@@ -15,10 +15,14 @@ export function renderGallery(books) {
       return `
       <li class="gallery-item">
         <img src="${book_image}" alt="${title}" />
-        <p>${title}</p>
-        <p>${author}</p>
-        <p>${price}</p>
-        <button class="book-button" type="button">Learn more</button>
+        <div class="book-card-content">
+            <div class="book-card-heading">
+                <h3>${title}</h3>
+                <p>${author}</p>
+            </div>
+            <div class="book-card-price">$${price}</div>
+        </div>
+        <button class="book-button">Learn more</button>
       </li>
     `;
     })
