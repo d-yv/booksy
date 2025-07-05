@@ -4,24 +4,16 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS-HW-12</title>
+    <title>Booksy</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <form class="form">
-      <label>
-        <input
-          type="text"
-          name="search-text"
-          placeholder="Search images..."
-          class="search-field"
-        />
-      </label>
-      <button type="submit" class="search-button">Search</button>
-    </form>
+    <select class="categories">
+      <option disabled selected>Select categorie</option>
+    </select>
 
     <ul class="gallery"></ul>
-    <button class="more-button" type="button">Load more</button>
+    <!-- <button class="more-button" type="button">Load more</button> -->
     <span class="loader"></span>
 
     <script type="module" src="./main.js"></script>
